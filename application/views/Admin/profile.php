@@ -9,14 +9,7 @@
                         <h4 class="page-title">Profile page</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                        <div class="d-md-flex">
-                            <ol class="breadcrumb ms-auto">
-                                <li><a href="<?php echo base_url()?>/#" class="fw-normal">Dashboard</a></li>
-                            </ol>
-                            <a href="<?php echo base_url()?>/https://www.wrappixel.com/templates/ampleadmin/" target="_blank"
-                                class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Upgrade
-                                to Pro</a>
-                        </div>
+                        
                     </div>
                 </div>
                 <!-- /.col-lg-12 -->

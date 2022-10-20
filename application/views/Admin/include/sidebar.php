@@ -8,7 +8,7 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('home/index')?>"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url()?>"
                                 aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
                                 <span class="">Dashboard</span> 
@@ -55,11 +55,6 @@
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
                                 <span class="">Error 404</span>
                             </a>
-                        </li>
-                        <li class="text-center p-20 upgrade-btn">
-                            <a href="https://www.wrappixel.com/templates/ampleadmin/"
-                                class="btn d-grid btn-danger text-white" target="_blank">
-                                Upgrade to Pro</a>
                         </li>
                     </ul>
 

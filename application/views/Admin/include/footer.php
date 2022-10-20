@@ -1,7 +1,7 @@
  <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a
-                    href="<?php echo base_url('assets')?>/https://www.wrappixel.com/">wrappixel.com</a>
+            <footer class="footer text-center"> 2022 ©  Bank de sang by <a
+                    href="https://doucsoft.tech">Doucsoft</a>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

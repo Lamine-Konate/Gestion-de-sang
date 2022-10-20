@@ -11,7 +11,7 @@ padding-right: .75em;
 top: 13px;
 }
 </style>
-<form action="" method="POST" autocomplete="off">
+<form action="<?= base_url('Auth/Register/registerNow')?>" method="POST" autocomplete="off">
 <section class="h-100 bg-dark">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -25,19 +25,21 @@ top: 13px;
             </div>
             <div class="col-xl-6">
               <div class="card-body p-md-5 text-black">
-                <h3 class="mb-5 text-uppercase">Registration form</h3>
-                <?php echo validation_errors("<div class='alert alert-danger'>,</div>")?>
+                <h3 class="mb-5 text-uppercase">INSCRIPTION</h3>
                 <div class="row">
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
                       <label class="form-label" for="nom">Nom</label>
                       <input type="text" id="nom" name='nom' class="form-control form-control-lg" />
+                      <small><?php echo form_error("nom"); ?></small>
                     </div>
                   </div>
                   <div class="col-md-6 mb-4">
                     <div class="form-outline">
                       <label class="form-label" for="prenom_user">Prenom</label>
                       <input type="text" id="prenom_user" name='prenom_user' class="form-control form-control-lg" />
+                      <small><?php echo form_error("prenom_user"); ?></small>
+
                     </div>
                   </div>
                 </div>
@@ -45,23 +47,28 @@ top: 13px;
                 <div class="form-outline mb-4">
                   <label class="form-label" for="email_user">Address Email</label>
                   <input type="email" id="email_user" name='email_user' class="form-control form-control-lg" />
+                  <small><?php echo form_error("email_user"); ?></small>
                 </div>
                 <div class="form-outline mb-4">
                   <label class="form-label" for="password_user">Mot de passe</label>
                   <input type="password" id="password_user" name='password_user' class="form-control form-control-lg" />
+                  <small><?php echo form_error("password_user"); ?></small>
                 </div>
                 <div class="form-outline mb-4">
                   <label class="form-label"  for="comfirmepsd">Confirmation</label>
                   <input type="password" id="comfirmepsd" name='confirmepsd' class="form-control form-control-lg" />
+                  <small><?php echo form_error("confirmepsd"); ?></small>
                 </div>
              
                 <div class="form-outline mb-4">
                   <label class="form-label" for="tel_user">Tel</label>
                   <input type="phone" id="tel_user" name='tel_user' class="form-control form-control-lg" />
+                  <small><?php echo form_error("tel_user"); ?></small>
                 </div>
                 <div class="form-outline mb-4">
                   <label class="form-label" for="localite_user">Localité</label>
                   <input type="text" id="localite_user" name='localite_user' class="form-control form-control-lg" />
+                  <small><?php echo form_error("localite_user"); ?></small>
                 </div>
                <!-- <div class="row">
                   <div class="col-md-6 mb-4">
@@ -81,8 +88,12 @@ top: 13px;
 
                 <div class="d-flex justify-content-end pt-3">
                   <button type="reset" class="btn btn-light btn-lg">Reset all</button>
-                  <button type="submit" class="btn btn-warning btn-lg ms-2" class="registera">Submit form</button>
+                  <button type="submit" class="btn btn-warning btn-lg ms-2">Submit</button>
                 </div>
+              <?php 
+              if($this->session->flashdata('success' )) { ?>
+              <p class="text-success text-center"><?= $this->session->flashdata('success')?></p>
+              <?php } ?>
 
               </div>
             </div>

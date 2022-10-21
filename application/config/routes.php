@@ -53,4 +53,5 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['Auth/Register/registerNow']['POST'] = 'Auth/Register/registerNow';
+$route['register'] = 'Auth/Register/register'; // route de l'enregistrement
+$route['login'] = 'Auth/Login/login'; // route de l'authenfication

@@ -11,7 +11,7 @@ padding-right: .75em;
 top: 13px;
 }
 </style>
-<form action="<?= base_url('Auth/Register/registerNow')?>" method="POST" autocomplete="off">
+<form action="<?= site_url('Auth/Register/registerNow')?>" method="POST" autocomplete="off">
 <section class="h-100 bg-dark">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">

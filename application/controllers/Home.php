@@ -75,24 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                    ->view('Admin/include/footer');
     }
     
-    public function login()
-    {
-           
-        $this->load->view('Admin/include/header')
-                   ->view('auth/login')
-                   ->view('Admin/include/footer');
-        
-    }
-
-    public function register()
-	{
-		$this->load->view('Admin/include/header')
-                   ->view('auth/register')
-                   ->view('Admin/include/footer');
-				
-		
-	
-    } 
+    
    
 
 } 

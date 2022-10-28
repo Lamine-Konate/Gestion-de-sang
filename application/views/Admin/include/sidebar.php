@@ -15,10 +15,10 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('home/profile')?>"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('Admin/index')?>"
                                 aria-expanded="false">
                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                <span class="">Profile</span>
+                                <span class="">Agents</span>
                             </a>
                         </li>
                         <li class="sidebar-item">

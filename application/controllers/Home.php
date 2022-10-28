@@ -16,16 +16,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                    ->view('Admin/include/sidebar')
                    ->view('accueil')
                    ->view('Admin/include/footer');
-                         
+
+        $data['agent_de_sante'] = $this->agent_model->getAllData();
+
+        return $this->load->view('Admin/agents', $data);        
     }
 
-    public function profile()
+    public function agents()
     {
         
       
         $this->load->view('Admin/include/header')
                    ->view('Admin/include/sidebar')
-                   ->view('Admin/profile')
+                   ->view('Admin/agents')
                    ->view('Admin/include/footer');
                          
     }

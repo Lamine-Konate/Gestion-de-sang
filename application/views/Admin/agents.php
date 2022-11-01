@@ -111,7 +111,7 @@
                                         <?php $i=1;  ?>
                                            <?php foreach ($agent_de_sante as $row) {?>
                                             <tr>
-                                                <th  scope="row"><?php echo $i++;?></th>
+                                                <th  scope="row"><?php echo $i++;?></th><p></p>
                                                 <td><?php echo $row->nom_agent; ?></td>
                                                 <td><?php echo $row->prenom_agent; ?></td>
                                                 <td><?php echo $row->email_agent; ?></td>
